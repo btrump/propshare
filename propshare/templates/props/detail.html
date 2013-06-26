@@ -1,0 +1,20 @@
+{% extends 'detail.html' %}
+{% block content %}
+<div class="prop" id="prop_{{ prop.id }}">
+  <div class="image-wrapper">
+    <img src="{{ MEDIA_URL }}{{ prop.image }}" title="{{ prop.name }}" />
+  </div>
+  <div class="name">
+    {{ prop.name }}
+  </div>
+  <div>
+    {{ prop.owner }}
+  </div>
+  <div>
+    {{ prop.description }}
+  </div>
+  <div>
+    <a href="#">Click here to get this item</a>
+  </div>
+</div>
+{% endblock %}
